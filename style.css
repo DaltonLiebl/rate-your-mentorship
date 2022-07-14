@@ -1,0 +1,278 @@
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ 
+    background-color: #BFD7E4;
+}
+body::before{ 
+    content: '';
+    position: absolute;
+    background-color: #293241;
+    width: 100%;
+    height: 464px;
+    z-index: -1;
+}
+header{ 
+    padding-top:107px ;
+    text-align: center;
+    
+}
+header h1{ 
+    font-family: 'Staatliches', cursive;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 400;
+    color: white;
+}
+header p { 
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.informacoes_pessoais{ 
+    width: 750px;
+    height: 133px;
+    margin: auto;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#F67669 ;
+    margin-top: 26px;
+    color: white;
+
+    font-family: 'Staatliches', cursive;
+    font-synthesis: 400;
+    font-size: 24px;
+}
+form { 
+    width: 750px;
+    min-height: 300px;
+    background-color: white;
+    margin: auto;
+    padding: 31px 64px 0;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 10px;
+}
+/* ==================={NOME_E_SOBRENOME} =================== */
+.nome_sobrenome{ 
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 19px;
+    color: #4E4958;
+}
+.nome_sobrenome label{ 
+    font-family: 'Poppins', sans-serif;
+    line-height: 24px;
+    font-size: 14px;
+}
+.nome_sobrenome input{ 
+    width: 300px;
+    height: 55px;
+    border-radius: 8px;
+    border: solid 1px #E6E6F0;
+    background-color: #FAFAFC;
+    margin-top: 7px;
+    padding: 10px;
+}
+/* ==================={E_MAIL} =================== */
+.email label{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: #4E4958;
+}
+span{ 
+    font-size:12px ;
+    color: #C1BCCC;
+    margin-left: 9px;
+}
+span:hover{ 
+    color:#78757e ;
+}
+.email input{ 
+    width: 622px;
+    height: 55px;
+    border-radius: 8px;
+    border: solid 1px #E6E6F0;
+    background-color: #FAFAFC;
+    margin-top: 7px;
+    padding: 10px;
+}
+/* ==================={CONFIGURAÇÃO_PAGE_02} =================== */
+
+fieldset{ 
+    font-family: 'Staatliches', cursive;
+    line-height: 24px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 29px;
+    margin-bottom: 8px;
+    color: #253B51;
+}
+fieldset input
+/* ==================={LINE} =================== */
+.line{ 
+    width:622px;
+    border: solid 1px #E6E6F0;;
+}
+/* ==================={SELECIONE_QUEM_FOI_O_SEU_TUTOR} =================== */
+.selecione{ 
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    color:#4E4958 ;
+    
+    
+}
+.selecione label{ 
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+.selecione select{ 
+    width: 300px;
+    height: 56px;
+    border-radius: 8px;
+    background-color:#FAFAFC;
+    text-align: center;
+    border: 1px solid #E6E6F0;
+    margin-bottom: 32px;
+
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+}
+.selecione  option{ 
+    font-family: 'Poppins', sans-serif;
+}
+/* ==================={FEEDBACK_SOBRE_O_MENTOR} =================== */
+.feedback{ 
+    display: flex;
+    flex-direction: column;
+    color: #4E4958;
+}
+.feedback textarea{ 
+    width: 608px;
+    height: 167px;
+    border-radius: 8px;
+    border: solid 1px #E6E6F0;
+    background-color: #FAFAFC;
+    margin-bottom: 30px;
+    resize: none;
+    padding: 10px;
+}
+/* ==================={CHECKBOX} =================== */
+.checket{ 
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    
+    
+}
+.checket label{ 
+    
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 36px;
+    
+}
+.checket label::before{ 
+
+content: '';
+width: 24px;
+height: 24px;
+border: solid 1px #E6E6F0;
+border-radius: 8px;
+
+
+
+}
+.checket input{ 
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    margin-bottom:36px ;
+    
+    
+}
+.checket input:checked + label::before{ 
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.checket input:focus + label::before{ 
+    outline: solid 2px black;
+}
+/* ==================={AGENDANDO_PRÓXIMA_CONSULTA} =================== */
+fieldset{ 
+    border: none;
+}
+fieldset legend{ 
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 34px;
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    color: #253B51;
+    text-align: center;
+}
+/* ==================={line} =================== */
+.line{ 
+    border: solid 1px #E6E6F0;
+    margin-bottom: 31px;
+}
+/* ==================={COLS_3} =================== */
+.cols_3{ 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 64px;
+    color:#4E4958 ;
+}
+.cols_3 > div:nth-child(1){ 
+    width: 300px;
+    margin-right: 32px;
+    
+}
+.cols_3 label{ 
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+.cols_3 input{ 
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    border: solid 1px #E6E6F0;
+    background-color: #FAFAFC;
+    padding: 10px;
+    margin-top: 8px;
+
+}
+/* ==================={button} =================== */
+button{ 
+    width:622px ;
+    height: 51px;
+    border-radius: 8px;
+    background-color: #F67669;
+    color: white;
+    border: none;
+    margin-bottom: 64px;
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 20px;
+}
+button:hover{ 
+    background-color: #ce594c;
+}
